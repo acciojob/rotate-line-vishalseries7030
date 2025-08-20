@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Continuous Line Rotation</title>
+  <style>
+    /* Centered line styling */
+    #line {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      height: 2px;
+      background-color: #000;
+      transform-origin: center center; /* rotate around its center */
+      transform: rotate(0deg);
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div id="line"></div>
 
+  <script src="script.js"></script>
 </body>
-
 </html>
